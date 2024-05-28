@@ -132,9 +132,8 @@ python test.py --checkpoint ${CHECKPOINT_FILE} --batchsize ${BATCHSIZE} --gpu ${
 The config files for faster R-CNN, FCOS, and YOLOv3 are shown in the following table.
 |   Model         | config name  | Download |
 |:---------------:|:-----------:|:---------:|
-| Faster R-CNN  | [Faster R-RNN](https://github.com/OriginSound/Computer-Vision-Course-PJ2/blob/main/detection/configs/pascal_voc/faster_rcnn_r50_fpn_1x_voc0712.py) | [checkpoint](https://pan.baidu.com/s/1CyFIBYO1TQSDm6anTxy-sA)  |
-|FCOS | [FCOS](https://github.com/OriginSound/Computer-Vision-Course-PJ2/blob/main/detection/configs/pascal_voc/fcos_4x4.py) | [checkpoint](https://pan.baidu.com/s/15CPnc8xFz0Ybn1ovQQ5Ztg)  |
-|YOLOv3 | [YOLOv3](https://github.com/OriginSound/Computer-Vision-Course-PJ2/blob/main/detection/configs/pascal_voc/yolov3_d53_mstrain-608_100e_voc0712.py) | [checkpoint](https://pan.baidu.com/s/1xJV3-rZ7-dTuvbTsCHt-uw)  |
+| Faster R-CNN  | [Faster R-RNN](https://github.com/OriginSound/Computer-Vision-Course-PJ2/blob/main/detection/configs/pascal_voc/faster_rcnn_r50_fpn_1x_voc0712.py) | [checkpoint](https://pan.baidu.com/s/1e0oLWeVjqotOj84XMD07Lg)  |
+|YOLOv3 | [YOLOv3](https://github.com/OriginSound/Computer-Vision-Course-PJ2/blob/main/detection/configs/pascal_voc/yolov3_d53_mstrain-608_100e_voc0712.py) | [checkpoint](https://pan.baidu.com/s/1zYT5zKR4aSKS7IM6vk2_QA)  |
 
 ### Training
 please first turn to the mmdetection and then run 
