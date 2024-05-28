@@ -129,7 +129,7 @@ python test.py --checkpoint ${CHECKPOINT_FILE} --batchsize ${BATCHSIZE} --gpu ${
 
 ## Detection 
 
-The config files for faster R-CNN, FCOS, and YOLOv3 are shown in the following table.
+The config files for faster R-CNN and YOLOv3 are shown in the following table.
 |   Model         | config name  | Download |
 |:---------------:|:-----------:|:---------:|
 | Faster R-CNN  | [Faster R-RNN](https://github.com/OriginSound/Computer-Vision-Course-PJ2/blob/main/detection/configs/pascal_voc/faster_rcnn_r50_fpn_1x_voc0712.py) | [checkpoint](https://pan.baidu.com/s/1e0oLWeVjqotOj84XMD07Lg)  |
