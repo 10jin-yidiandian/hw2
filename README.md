@@ -8,33 +8,21 @@ We explored three kinds of augmentation methods. The accuracy of each model on c
 <!-- START TABLE -->
 <!-- TABLE HEADER -->
 <th valign="bottom">Name</th>
-<th valign="bottom">Augmentation</th>
+<th valign="bottom">Status</th>
 <th valign="bottom">Accuracy</th>
 <th valign="bottom">checkpoint</th>
 
  <tr><td align="left">ResNet18</td>
-<td align="center">----</td>
-<td align="center">76.5%</td>
+<td align="center">Untrained</td>
+<td align="center">21.68%</td>
 <td align="center"><a href="https://pan.baidu.com/s/1K7y50PvgMlVAqfYFzoLskQ">
 checkpoint</a></td>
 </tr>
 
  <tr><td align="left">ResNet18</td>
-<td align="center"> MixUp</td>
-<td align="center">78.3%</td>
+<td align="center">Pretrained</td>
+<td align="center">75.87%</td>
 <td align="center"><a href="https://pan.baidu.com/s/1AzAlwf00U2d-vOELgnZ_oQ">checkpoint</a></td>
-</tr>
-
- <tr><td align="left">ResNet18</td>
-<td align="center"> CutOut</td>
-<td align="center">77.3%</td>
-<td align="center"><a href="https://pan.baidu.com/s/1PTb2piyKGUHDFw7bOf6BOA">checkpoint</a></td>
-</tr>
-
- <tr><td align="left">ResNet18</td>
-<td align="center"> CutMix</td>
-<td align="center">79.6%</td>
-<td align="center"><a href="https://pan.baidu.com/s/1tDl9KxyxXqredsYsdh-ihw">checkpoint</a></td>
 </tr>
 
 </tbody></table>
@@ -44,33 +32,21 @@ checkpoint</a></td>
 <!-- START TABLE -->
 <!-- TABLE HEADER -->
 <th valign="bottom">Name</th>
-<th valign="bottom">Augmentation</th>
+<th valign="bottom">Status</th>
 <th valign="bottom">Accuracy</th>
 <th valign="bottom">checkpoint</th>
 
  <tr><td align="left">VGG16</td>
-<td align="center">----</td>
+<td align="center">Untrained</td>
 <td align="center">73.8%</td>
 <td align="center"><a href="https://pan.baidu.com/s/1msMpEcS_Qu3u8hoigz5MpA">
 checkpoint</a></td>
 </tr>
 
  <tr><td align="left">VGG16</td>
-<td align="center"> MixUp</td>
+<td align="center">Pretrained</td>
 <td align="center">72.8%</td>
 <td align="center"><a href="https://pan.baidu.com/s/1sfcIRokhWM4fmY0QNLu0Pg">checkpoint</a></td>
-</tr>
-
- <tr><td align="left">VGG16</td>
-<td align="center"> CutOut</td>
-<td align="center">73.9%</td>
-<td align="center"><a href="https://pan.baidu.com/s/1AWfKnPtx4QsLGcaRmdn1eQ">checkpoint</a></td>
-</tr>
-
- <tr><td align="left">VGG16</td>
-<td align="center"> CutMix</td>
-<td align="center">73.9%</td>
-<td align="center"><a href="https://pan.baidu.com/s/1Af41tlx68tTPDrcf1gd5Lg">checkpoint</a></td>
 </tr>
 
 </tbody></table>
@@ -80,40 +56,30 @@ checkpoint</a></td>
 <!-- START TABLE -->
 <!-- TABLE HEADER -->
 <th valign="bottom">Name</th>
-<th valign="bottom">Augmentation</th>
+<th valign="bottom">Status</th>
 <th valign="bottom">Accuracy</th>
 <th valign="bottom">checkpoint</th>
 
  <tr><td align="left">GoogleNet</td>
-<td align="center">----</td>
+<td align="center">Untrained</td>
 <td align="center">76.5%</td>
 <td align="center"><a href="https://pan.baidu.com/s/1tJaTZr2DwVX33xzixjpypg">
 checkpoint</a></td>
 </tr>
 
  <tr><td align="left">GoogleNet</td>
-<td align="center"> MixUp</td>
-<td align="center">78.3%</td>
+<td align="center">Pretrained</td>
+<td align="center">76.27%</td>
 <td align="center"><a href="https://pan.baidu.com/s/1hvTi4GtDkt38JRVU8F_pVQ">checkpoint</a></td>
-</tr>
-
- <tr><td align="left">GoogleNet</td>
-<td align="center"> CutOut</td>
-<td align="center">77.3%</td>
-<td align="center"><a href="https://pan.baidu.com/s/13uGw4tTcGSXlbIKaRfZXKw">checkpoint</a></td>
-</tr>
-
- <tr><td align="left">GoogleNet</td>
-<td align="center"> CutMix</td>
-<td align="center">79.6%</td>
-<td align="center"><a href="https://pan.baidu.com/s/1WYbCHJjHs4BHl2_uGt7D1Q">checkpoint</a></td>
 </tr>
 
 </tbody></table>
 
-### Training
+### Training and Test
 ```
-python train.py --model ${MODEL} --epoch ${EPOCH} --batchsize ${BATCHSIZE} --gpu ${GPU_ID} --mode ${MODE}
+CUDA_VISIBLE_DEVICES=$GPU_ID python resnet_train.py --model resnet18 --mode 0 --epoch 50 --batchsize 256
+CUDA_VISIBLE_DEVICES=$GPU_ID python googlenet_train.py --model googlenet --mode 0 --epoch 50 --batchsize 32
+CUDA_VISIBLE_DEVICES=$GPU_ID python vgg16_train.py --model vgg16 --mode 0 --epoch 50 --batchsize 256
 ```
 
 - `MODE=0`: baseline
@@ -122,9 +88,10 @@ python train.py --model ${MODEL} --epoch ${EPOCH} --batchsize ${BATCHSIZE} --gpu
 - `MODE=3`: cutmix 
 
 
-### Test
+### Visualization
 ```
-python test.py --checkpoint ${CHECKPOINT_FILE} --batchsize ${BATCHSIZE} --gpu ${GPU_ID}
+pip install tensorboard
+tensorboard results/${model}/logdir
 ```
 
 ## Detection 
