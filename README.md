@@ -89,7 +89,7 @@ CUDA_VISIBLE_DEVICES=$GPU_ID python vgg16_train.py --model vgg16 --mode 0 --epoc
 ### Visualization
 ```
 pip install tensorboard
-tensorboard results/${model}/logdir
+tensorboard --logdir=results/${model}/logdir
 ```
 
 ## Detection 
