@@ -82,10 +82,8 @@ CUDA_VISIBLE_DEVICES=$GPU_ID python googlenet_train.py --model googlenet --mode 
 CUDA_VISIBLE_DEVICES=$GPU_ID python vgg16_train.py --model vgg16 --mode 0 --epoch 50 --batchsize 256
 ```
 
-- `MODE=0`: baseline
-- `MODE=1`: cutout
-- `MODE=2`: mixup 
-- `MODE=3`: cutmix 
+- `MODE=0`: Untrained
+- `MODE=1`: Pretrained
 
 
 ### Visualization
