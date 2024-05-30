@@ -77,14 +77,10 @@ checkpoint</a></td>
 
 ### Training and Test
 ```
-CUDA_VISIBLE_DEVICES=$GPU_ID python resnet_train.py --model resnet18 --mode 0 --epoch 50 --batchsize 256
-CUDA_VISIBLE_DEVICES=$GPU_ID python googlenet_train.py --model googlenet --mode 0 --epoch 50 --batchsize 32
-CUDA_VISIBLE_DEVICES=$GPU_ID python vgg16_train.py --model vgg16 --mode 0 --epoch 50 --batchsize 256
+CUDA_VISIBLE_DEVICES=$GPU_ID python resnet18.py --model resnet18 --epoch 50 --batchsize 256 --pretrained True
+CUDA_VISIBLE_DEVICES=$GPU_ID python googlenet.py --model googlenet --epoch 50 --batchsize 256 --pretrained True
+CUDA_VISIBLE_DEVICES=$GPU_ID python vgg16.py --model vgg16 --epoch 50 --batchsize 256 --pretrained True
 ```
-
-- `MODE=0`: Untrained
-- `MODE=1`: Pretrained
-
 
 ### Visualization
 ```
