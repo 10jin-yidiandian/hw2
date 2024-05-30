@@ -1,7 +1,7 @@
 # Computer-Vision-Course-PJ2
 
 ## Classification 
-We explored three kinds of augmentation methods. The accuracy of each model on cifar 100 is shown in the following table. **Passwords are all 1111**. Before training, ```tar zxvf CUB_200_2011.tgz```
+We explored three kinds of augmentation methods. The accuracy of each model on cifar 100 is shown in the following table. **Passwords are all 1111**. Before training, ```tar zxvf CUB_200_2011.tgz``` under folder 'classification'
 
 #### ResNet18
 <table><tbody>
