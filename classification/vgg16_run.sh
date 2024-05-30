@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES=5 python vgg16.py --model vgg16 --epoch 50 --batchsize 256 --pretrained True

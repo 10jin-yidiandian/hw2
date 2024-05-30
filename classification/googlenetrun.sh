@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES=6 python googlenet.py --model googlenet --epoch 50 --batchsize 512 --pretrained True

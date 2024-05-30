@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES=7 python resnet18.py --model resnet18 --epoch 50 --batchsize 512 --pretrained True
