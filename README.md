@@ -15,14 +15,14 @@ We explored three kinds of augmentation methods. The accuracy of each model on c
  <tr><td align="left">ResNet18</td>
 <td align="center">Untrained</td>
 <td align="center">21.68%</td>
-<td align="center"><a href="https://pan.baidu.com/s/1K7y50PvgMlVAqfYFzoLskQ">
+<td align="center"><a href="https://pan.baidu.com/s/1P7vfe6s-DU2wM9blTDOXEg">
 checkpoint</a></td>
 </tr>
 
  <tr><td align="left">ResNet18</td>
 <td align="center">Pretrained</td>
 <td align="center">75.87%</td>
-<td align="center"><a href="https://pan.baidu.com/s/1AzAlwf00U2d-vOELgnZ_oQ">checkpoint</a></td>
+<td align="center"><a href="https://pan.baidu.com/s/1FPpG4nVca0S8QqA-RNCV7g">checkpoint</a></td>
 </tr>
 
 </tbody></table>
@@ -39,14 +39,14 @@ checkpoint</a></td>
  <tr><td align="left">VGG16</td>
 <td align="center">Untrained</td>
 <td align="center">9.44%</td>
-<td align="center"><a href="https://pan.baidu.com/s/1msMpEcS_Qu3u8hoigz5MpA">
+<td align="center"><a href="https://pan.baidu.com/s/1xH4C2rvF5IagSKMxS8FyUg">
 checkpoint</a></td>
 </tr>
 
  <tr><td align="left">VGG16</td>
 <td align="center">Pretrained</td>
 <td align="center">72.8%</td>
-<td align="center"><a href="https://pan.baidu.com/s/1sfcIRokhWM4fmY0QNLu0Pg">checkpoint</a></td>
+<td align="center"><a href="https://pan.baidu.com/s/12tAMMf686bz_bfGrMcuYXA">checkpoint</a></td>
 </tr>
 
 </tbody></table>
@@ -63,7 +63,7 @@ checkpoint</a></td>
  <tr><td align="left">GoogleNet</td>
 <td align="center">Untrained</td>
 <td align="center">45.65%</td>
-<td align="center"><a href="https://pan.baidu.com/s/1tJaTZr2DwVX33xzixjpypg">
+<td align="center"><a href="https://pan.baidu.com/s/18RQrgi8uJtwcU3IMi9iGXg">
 checkpoint</a></td>
 </tr>
 
