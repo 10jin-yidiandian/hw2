@@ -38,7 +38,7 @@ checkpoint</a></td>
 
  <tr><td align="left">VGG16</td>
 <td align="center">Untrained</td>
-<td align="center">73.8%</td>
+<td align="center">9.44%</td>
 <td align="center"><a href="https://pan.baidu.com/s/1msMpEcS_Qu3u8hoigz5MpA">
 checkpoint</a></td>
 </tr>
@@ -62,7 +62,7 @@ checkpoint</a></td>
 
  <tr><td align="left">GoogleNet</td>
 <td align="center">Untrained</td>
-<td align="center">76.5%</td>
+<td align="center">45.65%</td>
 <td align="center"><a href="https://pan.baidu.com/s/1tJaTZr2DwVX33xzixjpypg">
 checkpoint</a></td>
 </tr>
