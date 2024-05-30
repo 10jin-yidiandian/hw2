@@ -70,7 +70,7 @@ checkpoint</a></td>
  <tr><td align="left">GoogleNet</td>
 <td align="center">Pretrained</td>
 <td align="center">76.27%</td>
-<td align="center"><a href="https://pan.baidu.com/s/1hvTi4GtDkt38JRVU8F_pVQ">checkpoint</a></td>
+<td align="center"><a href="https://pan.baidu.com/s/1dhFg2m7CK1-BfkfeFz7pzw">checkpoint</a></td>
 </tr>
 
 </tbody></table>
